@@ -1,10 +1,12 @@
 <template>
-  <div>
-    
-    <MyDisc  v-for="disc in MusicList" :key="disc.index" :disc="disc"/>
-    
-
-  </div>
+    <body class="my-bg-c">
+        <div class="container ">
+            <div class="row row-cols-5 g-8">    
+            <MyDisc  v-for="disc in MusicList" :key="disc.index" :disc="disc"/>
+            </div>
+        </div>  
+    </body>    
+  
 </template>
 
 <script>
@@ -46,7 +48,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.my-bg-c{
+    background-color: #1e2d3b;
+}
+
 
 </style>
 
